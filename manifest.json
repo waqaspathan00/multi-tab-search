@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Multi-Tab Search",
+  "version": "1.0",
+  "permissions": ["tabs", "activeTab", "scripting", "storage"],
+  "host_permissions": ["https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "search-icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "search-icon.png",
+    "32": "search-icon.png",
+    "48": "search-icon.png",
+    "128": "search-icon.png"
+  }
+}
