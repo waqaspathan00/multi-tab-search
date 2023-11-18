@@ -1,3 +1,5 @@
+<img width="323" alt="Screenshot 2023-11-17 at 7 34 14 PM" src="https://github.com/waqaspathan00/multi-tab-search/assets/67988358/00c6f1ab-bab4-46d9-87b7-56ecac266358">
+
 # Installation Instructions
 
 1. Download the project from github by clicking the green button that says "clone or download" and then clicking "download zip". Then extract the zip file to a folder of your choice
