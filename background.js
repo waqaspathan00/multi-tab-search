@@ -10,6 +10,17 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             }
 
             tabs.forEach(tab => {
+                const specialTabs = [
+                    "New Tab", "Extensions", "Chrome Web Store", 
+                    "Settings", "History", "Downloads", "Bookmarks"
+                ];
+                
+                if (specialTabs.includes(tab.tabTitle)) {
+                    tabsProcessed++;
+                    return;
+                }
+                
+
                 chrome.scripting.executeScript({
                     target: {tabId: tab.id},
                     function: searchTextOnPage,
